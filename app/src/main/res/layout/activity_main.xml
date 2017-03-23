@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leandroap.portofolioapp.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:id="@+id/layoutTitulo">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="roboto"
+        android:text="@string/txt_title"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/layoutTitulo">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/btn_filmes"
+            android:id="@+id/btn_movies"
+            android:theme="@style/AppTheme.Button"
+            android:onClick="exibirToast"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/btn_stock"
+            android:layout_below="@id/btn_movies"
+            android:id="@+id/btn_stock"
+            android:theme="@style/AppTheme.Button"
+            android:onClick="exibirToast" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/btn_bigger"
+            android:layout_below="@id/btn_stock"
+            android:id="@+id/btn_bigger"
+            android:theme="@style/AppTheme.Button"
+            android:onClick="exibirToast" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/btn_material"
+            android:layout_below="@id/btn_bigger"
+            android:id="@+id/btn_material"
+            android:theme="@style/AppTheme.Button"
+            android:onClick="exibirToast" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/btn_omnipresent"
+            android:layout_below="@id/btn_material"
+            android:id="@+id/btn_omnipresent"
+            android:theme="@style/AppTheme.Button"
+            android:onClick="exibirToast" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/btn_capstone"
+            android:layout_below="@id/btn_omnipresent"
+            android:id="@+id/btn_capstone"
+            android:theme="@style/AppTheme.Button"
+            android:onClick="exibirToast" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
